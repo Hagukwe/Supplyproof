@@ -85,7 +85,7 @@
             current-owner: tx-sender,
             status: "registered",
             location: initial-location,
-            timestamp: block-height,
+            timestamp: stacks-block-height,
             is-active: true
           }
         )
@@ -103,7 +103,7 @@
             new-owner: tx-sender,
             status: "registered",
             location: initial-location,
-            timestamp: block-height,
+            timestamp: stacks-block-height,
             notes: "Product registered in supply chain"
           }
         )
@@ -133,7 +133,7 @@
             (merge existing-product {
               current-owner: new-owner,
               location: new-location,
-              timestamp: block-height,
+              timestamp: stacks-block-height,
               status: "transferred"
             })
           )
@@ -146,7 +146,7 @@
               new-owner: new-owner,
               status: "transferred",
               location: new-location,
-              timestamp: block-height,
+              timestamp: stacks-block-height,
               notes: notes
             }
           )
